@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Montserrat";
+}
+
+.header {
+  background-color: #1a535c;
+  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+}
+
+.navbar {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  margin-left: 70px;
+}
+
+.nav-items {
+  margin-right: 70px;
+  list-style-type: none;
+}
+
+.nav-items::after {
+  content: "";
+  display: block;
+  width: 48vw;
+  height: 2px;
+  background-color: #fafafa;
+  position: relative;
+  top: 20px;
+  left: 47px;
+}
+
+.nav-items li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.nav-items li a {
+  font-size: 19px;
+  font-weight: 500;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.profile {
+  padding-top: 50px;
+  /* padding-bottom: 60px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  height: 450px;
+  clip-path: circle(37% at 48% 43%);
+}
+
+.content {
+  width: 40%;
+  margin-left: 40px;
+  position: relative;
+  bottom: 40px;
+}
+
+.content h1 {
+  font-size: 60px;
+  color: #fafafa;
+}
+
+.content p {
+  margin-top: 15px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #fafafa;
+}
+.social-media {
+  margin-top: 25px;
+}
+
+.social-media a {
+  margin-right: 24px;
+}
+
+.social-media a i {
+  font-size: 25px;
+  color: #fafafa;
+}
+
+.social-media a i:hover {
+  animation: zoom 200ms ease forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.about {
+  padding: 70px 150px;
+}
+
+.about h2 {
+  font-size: 55px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.about p {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.skills {
+  padding: 70px 150px;
+  background-color: #1a535c;
+  /* clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%); */
+}
+
+.skills h2 {
+  font-size: 55px;
+  text-align: center;
+  color: #fafafa;
+}
+
+.skill-icons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  margin: 25px 40px;
+}
+
+.skill-card div {
+  padding: 30px 32px;
+  background-color: #fafafa;
+  border-radius: 50%;
+}
+
+.skill-card img {
+  height: 55px;
+}
+
+.skill-card h3 {
+  margin-top: 20px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #fafafa;
+  text-align: center;
+}
