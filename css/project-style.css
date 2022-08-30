@@ -27,13 +27,13 @@ a {
   padding: 70px 100px;
 }
 
-h1 {
+.technology h1 {
   font-size: 50px;
   color: #1a1a1a;
   text-align: center;
 }
 
-h1::after {
+.technology h1::after {
   content: "";
   display: block;
   width: 22vw;
