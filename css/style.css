@@ -7,9 +7,14 @@
   font-family: "Montserrat";
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #1a535c;
-  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 
 .navbar {
@@ -50,12 +55,10 @@
   font-size: 19px;
   font-weight: 500;
   color: #fafafa;
-  text-decoration: none;
 }
 
 .profile {
   padding-top: 50px;
-  /* padding-bottom: 60px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -85,6 +88,7 @@
   font-weight: 500;
   color: #fafafa;
 }
+
 .social-media {
   margin-top: 25px;
 }
@@ -116,7 +120,7 @@
 }
 
 .about h2 {
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   color: #1a1a1a;
 }
@@ -132,17 +136,17 @@
 .skills {
   padding: 70px 150px;
   background-color: #1a535c;
-  /* clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%); */
+  border-radius: 60px;
 }
 
 .skills h2 {
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   color: #fafafa;
 }
 
-.skill-icons {
-  margin-top: 50px;
+.skill-cards {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,4 +173,165 @@
   font-weight: 600;
   color: #fafafa;
   text-align: center;
+}
+
+.projects {
+  padding: 70px 150px;
+}
+
+.projects h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.project-cards {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  margin: 35px;
+  /* background-color: #1a535c15; */
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #b7b7b7;
+}
+
+/* .project-card:hover {
+  cursor: pointer;
+  animation: zoom 200ms ease forwards;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+} */
+
+.project-card h3 {
+  padding: 22px;
+  font-size: 24px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.project-card img {
+  height: 230px;
+}
+
+.links {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.links a:hover {
+  color: #818181;
+}
+
+.see-more-btn {
+  display: block;
+  margin: 40px auto 0px auto;
+  padding: 12px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fafafa;
+  text-decoration: none;
+  background-color: #1a535c;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 200ms ease;
+}
+
+.see-more-btn:hover {
+  cursor: pointer;
+  background-color: #1a535cda;
+}
+
+.blogs {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #1a535c;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.blogs h2 {
+  font-size: 50px;
+  color: #fafafa;
+}
+
+.all-blogs {
+  margin-top: 40px;
+}
+
+.blog {
+  margin-bottom: 30px;
+}
+
+.blog h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fafafa;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.logo-footer {
+  height: 70px;
+  position: absolute;
+  left: 90px;
+  top: 45px;
+}
+
+.socials a {
+  margin: 12px;
+}
+
+.socials a i {
+  font-size: 30px;
+  color: #1a1a1a;
+}
+
+.socials a i:hover {
+  animation: zoom 200ms ease forwards;
+}
+
+.footer h5 {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.footer span::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #1a1a1a;
+  position: relative;
+  top: 3px;
+  margin: 0px 7px;
 }

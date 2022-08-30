@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-    <link
-      rel="shortcut icon"
-      href="./assets/svg-images/layer-logo.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/svg-images/layer-logo.svg" type="image/x-icon" />
 
     <!-- Linking font awesome library -->
     <link
@@ -21,27 +18,20 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Portfolio</title>
   </head>
   <body>
     <div class="main-container">
       <div class="header">
         <nav class="navbar">
-          <a href="#"
-            ><img
-              class="logo"
-              src="./assets/svg-images/layer.svg"
-              alt="layer"
-            />
-          </a>
+          <a href="#"><img class="logo" src="./assets/svg-images/layer.svg" alt="layer" /> </a>
 
           <ul class="nav-items">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#blog-section">Blogs</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </nav>
 
@@ -63,9 +53,7 @@
                 ><i class="fa-brands fa-twitter"></i
               ></a>
 
-              <a
-                href="https://www.linkedin.com/in/shubham-purwar-076122239/"
-                target="_blank"
+              <a href="https://www.linkedin.com/in/shubham-purwar-076122239/" target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
 
@@ -73,9 +61,7 @@
                 ><i class="fa-brands fa-github"></i
               ></a>
 
-              <a
-                href="https://www.findcoder.io/u/shubham_purwar"
-                target="_blank"
+              <a href="https://www.findcoder.io/u/shubham_purwar" target="_blank"
                 ><i class="fa-solid fa-code"></i
               ></a>
             </div>
@@ -83,21 +69,20 @@
         </div>
       </div>
 
-      <div class="about">
+      <div class="about" id="about-section">
         <h2>Hello World!</h2>
         <p>
-          I'm a software developer primarily interested in web development. I
-          have previously worked with languages like C, C++, Python and
-          JavaScript. Using HTML and CSS, I have created many beautiful
-          websites. Currently on the path to become a Full-stack developer.
-          Apart from coding I love coffee, cats and music.
+          I'm a software developer primarily interested in web development. I have previously worked
+          with languages like C, C++, Python and JavaScript. Using HTML and CSS, I have created many
+          beautiful websites. Currently on the path to become a Full-stack developer. Apart from
+          coding I love coffee, cats and music.
         </p>
       </div>
 
-      <div class="skills">
+      <div class="skills" id="skills-section">
         <h2>Skills</h2>
 
-        <div class="skill-icons">
+        <div class="skill-cards">
           <div class="skill-card">
             <div><img src="./assets/svg-images/html.svg" alt="html" /></div>
             <h3>HTML</h3>
@@ -142,11 +127,121 @@
         </div>
       </div>
 
-      <div class="projects"></div>
+      <div class="projects" id="project-section">
+        <h2>Projects</h2>
 
-      <div class="blogs"></div>
+        <div class="project-cards">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <img src="./assets/png-images/Screenshot (26).png" alt="project-1" />
 
-      <div class="contact"></div>
+            <div class="links">
+              <a href="https://github.com/purwar1997/Portfolio-Project-1" target="_blank"
+                >Source Code</a
+              >
+
+              <a href="https://portfolio-project-1-five.vercel.app/" target="_blank"
+                >Deployed Link</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 2</h3>
+            <img src="./assets/png-images/Screenshot (27).png" alt="project-2" />
+
+            <div class="links">
+              <a href="https://github.com/purwar1997/Portfolio-Project-2" target="_blank"
+                >Source Code</a
+              >
+
+              <a href="https://portfolio-project-2.vercel.app/" target="_blank">Deployed Link</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <img src="./assets/png-images/Screenshot (28).png" alt="project-3" />
+
+            <div class="links">
+              <a href="https://github.com/purwar1997/Portfolio-Project-3" target="_blank"
+                >Source Code</a
+              >
+
+              <a href="https://portfolio-project-3.vercel.app/" target="_blank">Deployed Link</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 4</h3>
+            <img src="./assets/png-images/Screenshot (29).png" alt="project-4" />
+
+            <div class="links">
+              <a href="https://github.com/purwar1997/Portfolio-Project-4" target="_blank"
+                >Source Code</a
+              >
+
+              <a href="https://portfolio-project-4-chi.vercel.app/" target="_blank"
+                >Deployed Link</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <a href="./html/projects.html"><button class="see-more-btn">See More</button></a>
+      </div>
+
+      <div class="blogs" id="blog-section">
+        <h2>Blogs</h2>
+
+        <div class="all-blogs">
+          <div class="blog">
+            <h3><span>01</span> Detailed guide on CSS Positions</h3>
+          </div>
+ 
+          <div class="blog">
+            <h3><span>02</span> Detailed guide on CSS Selectors</h3>
+          </div>
+           
+          <div class="blog">
+            <h3><span>03</span> Quick cheatsheet of common Git commands</h3>
+          </div>
+
+          <div class="blog">
+            <h3><span>04</span> My journey of learning HTML and CSS</h3>
+          </div>
+
+          <div class="blog">
+            <h3><span>05</span> Quick cheatsheet of Markdown syntax</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact footer" id="contact-section">
+        <a href="#"><img class="logo-footer" src="../assets/svg-images/layer-logo.svg" alt="logo"></a>
+
+        <div class="socials">
+          <a href="https://twitter.com/ShubhamPurwar6" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+  
+          <a href="https://www.linkedin.com/in/shubham-purwar-076122239/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+  
+          <a href="https://github.com/purwar1997" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+  
+          <a href="https://www.findcoder.io/u/shubham_purwar" target="_blank"
+            ><i class="fa-solid fa-code"></i
+          ></a>
+        </div>
+  
+        <div>
+          <h5>Shubham Purwar<span>&copy; 2022</h5>
+        </div>
+      </div>
     </div>
   </body>
 </html>
