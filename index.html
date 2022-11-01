@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link rel="icon" href="./assets/svg-images/layer.svg" type="image/svg" />
 
-    <link rel="shortcut icon" href="./assets/svg-images/layer-logo.svg" type="image/x-icon" />
-
-    <!-- Linking font awesome library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    <!-- Font Awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <title>Portfolio | Shubham Purwar</title>
   </head>
 
   <body>
-    <div class="main-container">
-      <div class="header">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <!-- Navbar -->
         <nav class="navbar">
-          <a href="#"><img class="logo" src="./assets/svg-images/layer.svg" alt="logo" /></a>
+          <a href="#"><img class="logo" src="./assets/svg-images/layer-white.svg" alt="logo" /></a>
 
           <ul class="nav-items">
             <li><a href="#">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#skills-section">Skills</a></li>
-            <li><a href="#project-section">Projects</a></li>
-            <li><a href="#blog-section">Blogs</a></li>
-            <li><a href="#contact-section">Contact</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="./html/projects.html">Projects</a></li>
+            <li><a href="./html/blogs.html">Blogs</a></li>
           </ul>
         </nav>
 
-        <div class="profile">
-          <div>
-            <img class="profile-pic" src="./assets/jpg-images/Profile Picture.jpg" alt="profile-pic" />
+        <!-- Intro section -->
+        <section class="intro">
+          <div class="image">
+            <img
+              class="profile-image"
+              src="./assets/png-images/Profile Picture.png"
+              alt="profile-image"
+            />
           </div>
 
           <div class="content">
             <h1>Shubham Purwar</h1>
             <p>Newbie on the path to become a Full Stack developer</p>
 
-            <div class="social-media">
+            <div class="social-links">
               <a href="https://twitter.com/ShubhamPurwar6" target="_blank">
-                <i class="fa-brands fa-twitter"></i></a>
+                <i class="fa-brands fa-twitter"></i
+              ></a>
 
-              <a href="https://www.linkedin.com/in/shubham-purwar-076122239/" target="_blank"><i
-                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/shubham-purwar-076122239/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
 
-              <a href="https://github.com/purwar1997" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/purwar1997" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
 
-              <a href="https://www.findcoder.io/u/shubham_purwar" target="_blank"><i class="fa-solid fa-code"></i></a>
+              <a href="https://www.findcoder.io/u/shubham_purwar" target="_blank"
+                ><i class="fa-solid fa-code"></i
+              ></a>
             </div>
           </div>
-        </div>
+        </section>
       </div>
+    </header>
 
-      <div class="about" id="about-section">
+    <!-- About-me section -->
+    <section class="about-me" id="about-me">
+      <div class="container">
         <h2>Hello World!</h2>
         <p>
-          I'm a software developer primarily interested in web development. I have previously worked with languages like
-          C, C++, Python and JavaScript. Using HTML and CSS, I have created many beautiful websites. Currently on the
-          path to become a Full-stack developer. Apart from coding I love coffee, cats and music.
+          I'm a software developer primarily interested in web development. I have previously worked
+          with languages like C, C++, Python and JavaScript. Using HTML and CSS, I have created many
+          beautiful websites. Currently on the path to become a Full-stack developer. Apart from
+          coding I love coffee, cats and music.
         </p>
       </div>
+    </section>
 
-      <div class="skills" id="skills-section">
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <div class="container">
         <h2>Skills</h2>
 
         <div class="skill-cards">
@@ -81,23 +103,23 @@
           </div>
 
           <div class="skill-card">
+            <div><img src="./assets/svg-images/tailwind-css.svg" alt="tailwind-css" /></div>
+            <h3>Tailwind CSS</h3>
+          </div>
+
+          <div class="skill-card">
             <div><img src="./assets/svg-images/javascript.svg" alt="javascript" /></div>
             <h3>JavaScript</h3>
           </div>
 
           <div class="skill-card">
-            <div><img src="./assets/svg-images/c.svg" alt="C" /></div>
-            <h3>C</h3>
+            <div><img src="./assets/svg-images/react.svg" alt="react.js" /></div>
+            <h3>React.js</h3>
           </div>
 
           <div class="skill-card">
-            <div><img src="./assets/svg-images/c++.svg" alt="C++" /></div>
-            <h3>C++</h3>
-          </div>
-
-          <div class="skill-card">
-            <div><img src="./assets/svg-images/python.svg" alt="python" /></div>
-            <h3>Python</h3>
+            <div><img src="./assets/svg-images/nodejs.svg" alt="node.js" /></div>
+            <h3>Node.js</h3>
           </div>
 
           <div class="skill-card">
@@ -111,114 +133,124 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="projects" id="project-section">
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <div class="container">
         <h2>Projects</h2>
 
         <div class="project-cards">
+          <!-- Project 1 -->
           <div class="project-card">
             <h3>Project 1</h3>
-            <img src="./assets/png-images/Screenshot (26).png" alt="project-1" />
+            <img src="./assets/png-images/project-1.png" alt="project-1" />
 
             <div class="links">
-              <a href="https://github.com/purwar1997/Portfolio-Project-1" target="_blank">Source Code</a>
-
-              <a href="https://portfolio-project-1-five.vercel.app/" target="_blank">Deployed Link</a>
+              <a href="https://github.com/purwar1997/Portfolio-Project-1" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://portfolio-project-1-five.vercel.app/" target="_blank"
+                >Deployed Link</a
+              >
             </div>
           </div>
 
+          <!-- Project 2 -->
           <div class="project-card">
             <h3>Project 2</h3>
-            <img src="./assets/png-images/Screenshot (27).png" alt="project-2" />
+            <img src="./assets/png-images/project-2.png" alt="project-2" />
 
             <div class="links">
-              <a href="https://github.com/purwar1997/Portfolio-Project-2" target="_blank">Source Code</a>
-
+              <a href="https://github.com/purwar1997/Portfolio-Project-2" target="_blank"
+                >Source Code</a
+              >
               <a href="https://portfolio-project-2.vercel.app/" target="_blank">Deployed Link</a>
             </div>
           </div>
 
+          <!-- Project 3 -->
           <div class="project-card">
             <h3>Project 3</h3>
-            <img src="./assets/png-images/Screenshot (28).png" alt="project-3" />
+            <img src="./assets/png-images/project-3.png" alt="project-3" />
 
             <div class="links">
-              <a href="https://github.com/purwar1997/Portfolio-Project-3" target="_blank">Source Code</a>
-
+              <a href="https://github.com/purwar1997/Portfolio-Project-3" target="_blank"
+                >Source Code</a
+              >
               <a href="https://portfolio-project-3.vercel.app/" target="_blank">Deployed Link</a>
             </div>
           </div>
 
+          <!-- Project 4 -->
           <div class="project-card">
             <h3>Project 4</h3>
-            <img src="./assets/png-images/Screenshot (29).png" alt="project-4" />
+            <img src="./assets/png-images/project-4.png" alt="project-4" />
 
             <div class="links">
-              <a href="https://github.com/purwar1997/Portfolio-Project-4" target="_blank">Source Code</a>
-
-              <a href="https://portfolio-project-4-chi.vercel.app/" target="_blank">Deployed Link</a>
+              <a href="https://github.com/purwar1997/Portfolio-Project-4" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://portfolio-project-4-chi.vercel.app/" target="_blank"
+                >Deployed Link</a
+              >
             </div>
           </div>
         </div>
 
         <a href="./html/projects.html"><button class="see-more-btn">See More</button></a>
       </div>
+    </section>
 
-      <div class="blogs" id="blog-section">
+    <!-- Blogs section -->
+    <section class="blogs" id="blogs">
+      <div class="container">
         <h2>Blogs</h2>
 
         <div class="blog-material">
+          <!-- Blog Cards -->
           <div class="blog-cards">
-            <a href="#">
+            <a href="">
               <div class="blog-card">
-                <img src="./assets/png-images/Screenshot (35).png" alt="blog-1">
+                <img src="./assets/png-images/project-5.png" alt="blog-1" />
                 <h4>CSS Positions</h4>
               </div>
             </a>
 
-            <a href="#">
+            <a href="">
               <div class="blog-card">
-                <img src="./assets/png-images/Screenshot (30).png" alt="blog-2">
+                <img src="./assets/png-images/project-10.png" alt="blog-2" />
                 <h4>CSS Psuedo-Selectors</h4>
               </div>
             </a>
           </div>
 
-          <div class="blog-content">
-            <a href="#">
-              <div class="blog">
-                <span>01</span>
-                <h3> Detailed guide on CSS Positions</h3>
-              </div>
-            </a>
+          <!-- Blog links -->
+          <div class="blog-links">
+            <div class="blog">
+              <span>01</span>
+              <a href=""><h3>Detailed guide on CSS Positions</h3></a>
+            </div>
 
-            <a href="#">
-              <div class="blog">
-                <span>02</span>
-                <h3> Detailed guide on CSS Selectors</h3>
-              </div>
-            </a>
+            <div class="blog">
+              <span>02</span>
+              <a href=""><h3>Detailed guide on CSS Selectors</h3></a>
+            </div>
 
-            <a href="#">
-              <div class="blog">
-                <span>03</span>
-                <h3> Quick cheatsheet of common Git commands</h3>
-              </div>
-            </a>
+            <div class="blog">
+              <span>03</span>
+              <a href=""><h3>Quick cheatsheet of common Git commands</h3></a>
+            </div>
 
-            <a href="#">
-              <div class="blog">
-                <span>04</span>
-                <h3> Quick cheatsheet of Markdown syntax</h3>
-              </div>
-            </a>
+            <div class="blog">
+              <span>04</span>
+              <a href=""><h3>Quick cheatsheet of Markdown syntax</h3></a>
+            </div>
 
-            <a href="#">
-              <div class="blog">
-                <span>05</span>
-                <h3> My journey of learning HTML and CSS</h3>
-              </div>
-            </a>
+            <div class="blog">
+              <span>05</span>
+              <a href=""><h3>My journey of learning HTML and CSS</h3></a>
+            </div>
           </div>
         </div>
 
@@ -226,26 +258,37 @@
           <button class="read-more-btn">Read More</button>
         </a>
       </div>
+    </section>
 
-      <div class="contact footer" id="contact-section">
-        <a href="#"><img class="logo-footer" src="./assets/svg-images/layer-logo.svg" alt="logo"></a>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <a href="#"><img class="logo-footer" src="./assets/svg-images/layer.svg" alt="logo" /></a>
 
-        <div class="socials">
-          <a href="https://twitter.com/ShubhamPurwar6" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <div class="footer-middle">
+          <div class="social-links-footer">
+            <a href="https://twitter.com/ShubhamPurwar6" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
 
-          <a href="https://www.linkedin.com/in/shubham-purwar-076122239/" target="_blank"><i
-              class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/shubham-purwar-076122239/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
 
-          <a href="https://github.com/purwar1997" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/purwar1997" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
 
-          <a href="https://www.findcoder.io/u/shubham_purwar" target="_blank"><i class="fa-solid fa-code"></i></a>
-        </div>
+            <a href="https://www.findcoder.io/u/shubham_purwar" target="_blank"
+              ><i class="fa-solid fa-code"></i
+            ></a>
+          </div>
 
-        <div>
-          <h5>Shubham Purwar<span>&copy; 2022</h5>
+          <div class="copyright">
+            <p>Shubham Purwar<span>&copy; 2022</span></p>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
-
 </html>
