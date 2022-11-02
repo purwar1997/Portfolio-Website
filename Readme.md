@@ -8,7 +8,7 @@
 
 This project is a portfolio website to showcase the projects I have built so far. It is created using HTML and CSS and is hosted on Vercel.
 
-## Components of a website
+## Components of the website
 
 This website is divided into following sections :-
 
