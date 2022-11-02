@@ -24,4 +24,4 @@ This website is divided into following sections :-
 
 ![preview](<./previews/Screenshot%20(143).png>)
 
-### To visit my portfolio website, [click here](https://portfolio-website-seven-vert.vercel.app/).
+### [Live link](https://portfolio-website-seven-vert.vercel.app/) of the portfolio website.
