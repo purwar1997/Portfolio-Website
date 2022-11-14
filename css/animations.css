@@ -34,6 +34,10 @@
   }
 }
 
+.navbar {
+  animation: slideInFromTop 700ms ease 1 forwards;
+}
+
 .intro .image {
   animation: slideInFromLeft 700ms ease 1 forwards;
 }
